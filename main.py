@@ -2,9 +2,10 @@
 
 import os 
 import platform
+import posspmanager as poss
 
 
-plat = "NULL"
+plat = platform.system()
 
 version = "Build 0.0.1"
 
@@ -16,8 +17,6 @@ def about():
     print("Made by Extraskilled56")
     print("Copyright Extraskilled56 2024")
     
-
-
 def command():
     command = str(input("C:"))
     if command == "version":
@@ -32,7 +31,7 @@ print("Welcome to CmdOS")
 
 print("A basic OS, for basic things")
 
-print("This is a beta " + version + "s ome things might not work")
+print("This is a beta " + version + " some things might not work")
 
 command()
 command()
