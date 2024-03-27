@@ -7,7 +7,7 @@ import pcommands as poss
 
 plat = platform.system()
 runposs = "python3 posspmanager.py"
-version = "Build 0.0.1"
+version = "Build 0.1.2"
 
 
 def about():
@@ -27,6 +27,12 @@ def command():
         os.system(runposs)
     elif command == "poss install fusiongamesxcli":
         poss.install_FusionGamesXCLI()
+    elif command == "poss run fusiongamesxcli":
+        poss.run_FusionGamesXCLI()
+    elif command == "poss install pycalculate":
+        poss.install_pyCalculate()
+    elif command == "poss run pycalculate":
+        poss.run_pyCalculate()
     else:
         print("command not reconized")
 # start frontend
