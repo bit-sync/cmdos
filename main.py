@@ -2,11 +2,11 @@
 
 import os 
 import platform
-import posspmanager as poss
+import pcommands as poss
 
 
 plat = platform.system()
-
+runposs = "python3 posspmanager.py"
 version = "Build 0.0.1"
 
 
@@ -15,14 +15,18 @@ def about():
     print("version: " + version)
     print("platform: "+ plat)
     print("Made by Extraskilled56")
-    print("Copyright Extraskilled56 2024")
+    print("Copyright Extraskilled56, 2024")
     
 def command():
     command = str(input("C:"))
     if command == "version":
         print(version)
-    if command == "about":
+    elif command == "about":
         about()
+    elif command == "poss":
+        os.system(runposs)
+    elif command == "poss install fusiongamesxcli":
+        poss.install_FusionGamesXCLI()
     else:
         print("command not reconized")
 # start frontend

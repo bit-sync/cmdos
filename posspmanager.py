@@ -2,7 +2,7 @@
 
 import os
 import platform
-import posspmanager as poss
+import pcommands as poss
 lista = open("list.txt", "a")
 listr = open("list.txt", "r")
 version = "1.3.1"
