@@ -7,7 +7,7 @@ import pcommands as poss
 
 plat = platform.system()
 runposs = "python3 posspmanager.py"
-version = "Build 0.1.2"
+version = "Build 0.1.4"
 
 
 def about():
@@ -33,8 +33,13 @@ def command():
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
         poss.run_pyCalculate()
+    elif command == "poss list":
+        poss.list()
+    elif command == "exit":
+        exit()
     else:
         print("command not reconized")
+    
 # start frontend
 
 print("Welcome to CmdOS")
