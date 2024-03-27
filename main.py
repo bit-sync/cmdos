@@ -33,8 +33,13 @@ def command():
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
         poss.run_pyCalculate()
+    elif command == "poss list":
+        poss.list()
+    elif command == "exit":
+        exit()
     else:
         print("command not reconized")
+    
 # start frontend
 
 print("Welcome to CmdOS")
