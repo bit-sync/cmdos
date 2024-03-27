@@ -7,7 +7,7 @@ import pcommands as poss
 
 plat = platform.system()
 runposs = "python3 posspmanager.py"
-version = "Build 0.1.2"
+version = "Build 0.1.4"
 
 
 def about():
