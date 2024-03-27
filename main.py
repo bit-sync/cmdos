@@ -7,6 +7,7 @@ import pcommands as poss
 
 plat = platform.system()
 runposs = "python3 posspmanager.py"
+possversion = "1.3.1 CmdOS build"
 version = "Build 0.1.4"
 
 
@@ -37,6 +38,8 @@ def command():
         poss.list()
     elif command == "exit":
         exit()
+    elif command == "poss version":
+        print(possversion)
     else:
         print("command not reconized")
     

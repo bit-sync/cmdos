@@ -1,3 +1,42 @@
 # CmdOS
 
-this is a basic python operating system
+this is a basic, python, embeddable OS.
+
+## Installation
+
+Run these commands in the following order:
+
+!this is not finished!
+
+
+## Commands
+
+### "about"
+
+this prints info about your current installation
+
+### "version"
+
+prints current verison
+
+### "poss"
+
+this command runs the Poss python package manager.
+
+### "poss install {package}"
+
+this poss command installs whatever package you put after poss install.
+
+### "poss run {package}"
+
+this poss command might not work for all packages, but most. It runs the package of your choosing.
+### "poss version"
+
+this prints the current Poss version
+
+## packages and software
+
+CmdOS does not come with any software besides the package manager, Poss. 
+
+to view all packages, go to [the Poss gitlab](https://gitlab.com/poss4/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
+

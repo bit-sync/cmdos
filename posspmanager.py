@@ -5,7 +5,7 @@ import platform
 import pcommands as poss
 lista = open("list.txt", "a")
 listr = open("list.txt", "r")
-version = "1.3.1"
+version = "1.3.1 CmdOS build"
 plat = platform.system()
 def list():
     print(listr.read())
