@@ -8,7 +8,7 @@ Run these commands in the following order:
 
 1st:
 ```
-git clone -b https://gitlab.com/cmdos10/cmdos
+git clone https://gitlab.com/cmdos10/cmdos.git
 ```
 2ed:
 ```
