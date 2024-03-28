@@ -51,8 +51,6 @@ print("Welcome to CmdOS")
 
 print("A basic OS, for basic things")
 
-print("This is a beta " + version + " some things might not work")
-
 command()
 command()
 command()
