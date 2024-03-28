@@ -6,9 +6,19 @@ this is a basic, python, embeddable OS.
 
 Run these commands in the following order:
 
-!this is not finished!
-
-
+1st:
+```
+git clone -b https://gitlab.com/cmdos10/cmdos
+```
+2ed:
+```
+cd cmdos
+```
+3ed:
+```
+python3 main.py
+```
+Done!!
 ## Commands
 
 ### "about"
@@ -18,6 +28,10 @@ this prints info about your current installation
 ### "version"
 
 prints current verison
+
+### "update"
+
+updates CmdOS
 
 ### "poss"
 
@@ -31,6 +45,12 @@ this poss command installs whatever package you put after poss install.
 
 this poss command might not work for all packages, but most. It runs the package of your choosing.
 ### "poss version"
+
+prints the version of poss
+
+### "poss list"
+
+
 
 this prints the current Poss version
 
