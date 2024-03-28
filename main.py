@@ -7,7 +7,8 @@ import pcommands as poss
 
 plat = platform.system()
 runposs = "python3 posspmanager.py"
-version = "Build 0.1.4"
+possversion = "1.3.1 CmdOS version"
+version = "Build 1.0.0"
 
 
 def about():
@@ -37,6 +38,10 @@ def command():
         poss.list()
     elif command == "exit":
         exit()
+    elif command == "poss version":
+        print(possversion)
+    elif command == "update":
+        os.system("git pull")
     else:
         print("command not reconized")
     
