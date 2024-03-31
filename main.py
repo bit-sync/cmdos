@@ -8,7 +8,7 @@ import pcommands as poss
 plat = platform.system()
 runposs = "python3 posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.0.0"
+version = "Build 1.1.2"
 
 
 def about():
@@ -43,9 +43,9 @@ def command():
     elif command == "update":
         os.system("git pull")
     elif command == "poss install git-python":
-        poss.install_gitpython()
+        poss.install_git_python()
     elif command == "poss run git-python":
-        poss.run_gitpython
+        poss.run_git_python()
     else:
         print("command not reconized")
     
