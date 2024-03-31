@@ -2,10 +2,9 @@
 
 import os
 import platform
-import pcommands as poss
 lista = open("list.txt", "a")
 listr = open("list.txt", "r")
-version = "1.3.1 CmdOS build"
+version = "1.4.2 CmdOS build"
 plat = platform.system()
 def list():
     print(listr.read())
@@ -39,6 +38,11 @@ def command():
        lista.write("pycalculate, ")
     elif command == "run pycalculate":
         run_pyCalculate()
+    elif command == "install git-python":
+       install_gitpython()
+       lista.write("git-python, ")
+    elif command == "run git-python":
+        run_gitpython()
     elif command == "about":
         about()
     elif command == "update":
@@ -60,6 +64,12 @@ def run_pyCalculate():
     os.system("python3 pycalculate/main.py")
 # pycal package end
 
+# gitpy package start
+
+def install_gitpython():
+    os.system("git clone -b main https://gitlab.com/zjones.092912/git-python.git")
+def run_gitpython():
+    os.system("python3 git-python/git-python.py")
 def end():
     exit()
 

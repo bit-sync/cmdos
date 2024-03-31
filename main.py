@@ -42,6 +42,10 @@ def command():
         print(possversion)
     elif command == "update":
         os.system("git pull")
+    elif command == "poss install git-python":
+        poss.install_gitpython()
+    elif command == "poss run git-python":
+        poss.run_gitpython
     else:
         print("command not reconized")
     

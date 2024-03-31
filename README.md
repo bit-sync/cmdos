@@ -44,13 +44,12 @@ this poss command installs whatever package you put after poss install.
 ### "poss run {package}"
 
 this poss command might not work for all packages, but most. It runs the package of your choosing.
+
 ### "poss version"
 
 prints the version of poss
 
 ### "poss list"
-
-
 
 this prints the current Poss version
 
