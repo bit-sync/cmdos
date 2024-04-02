@@ -1,6 +1,6 @@
 # CmdOS
 
-this is a basic, python, embeddable OS.
+This is a basic, python, embeddable OS.
 
 ## Installation
 
@@ -8,7 +8,7 @@ Run these commands in the following order:
 
 1st:
 ```
-git clone https://gitlab.com/cmdos10/cmdos.git
+git clone https://gitlab.com/gitsync1/cmdos.git
 ```
 2ed:
 ```
@@ -57,5 +57,5 @@ this prints the current Poss version
 
 CmdOS does not come with any software besides the package manager, Poss. 
 
-to view all packages, go to [the Poss gitlab](https://gitlab.com/poss4/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
+to view all packages, go to [the Poss gitlab](https://gitlab.com/gitsync1/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
 
