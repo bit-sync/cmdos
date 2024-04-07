@@ -10,7 +10,7 @@ runposs = "python3 posspmanager.py"
 possversion = "1.3.1 CmdOS version"
 version = "Build 1.0.0"
 
-
+# test
 def about():
     print("about CmdOS")
     print("version: " + version)
