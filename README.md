@@ -33,6 +33,18 @@ prints current verison
 
 updates CmdOS
 
+### "PYpad"
+
+runs PYpad
+
+### "PYmath"
+
+runs PYmath
+
+### "PYpaint"
+
+runs PYpaint
+
 ### "poss"
 
 this command runs the Poss python package manager.

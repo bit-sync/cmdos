@@ -23,6 +23,12 @@ def command():
         print(version)
     elif command == "about":
         about()
+    elif command == "PYpad":
+        os.system("python3 system\sys_software\PYpad\PYpad.py")
+    elif command == "PYmath":
+        os.system("python3 system\sys_software\PYmath\PYmath.py")
+    elif command == "PYpaint":
+        os.system("python3 system\sys_software\PYpaint\PYpaint.py")
     elif command == "poss":
         os.system(runposs)
     elif command == "poss install fusiongamesxcli":
