@@ -8,7 +8,7 @@ Run these commands in the following order:
 
 1st:
 ```
-git clone https://gitlab.com/gitsync1/cmdos.git
+git clone -b https://git.bitsyncdev.com/bit-sync/CmdOS.git
 ```
 2ed:
 ```
@@ -44,12 +44,13 @@ this poss command installs whatever package you put after poss install.
 ### "poss run {package}"
 
 this poss command might not work for all packages, but most. It runs the package of your choosing.
-
 ### "poss version"
 
 prints the version of poss
 
 ### "poss list"
+
+
 
 this prints the current Poss version
 
@@ -57,5 +58,5 @@ this prints the current Poss version
 
 CmdOS does not come with any software besides the package manager, Poss. 
 
-to view all packages, go to [the Poss gitlab](https://gitlab.com/gitsync1/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
+to view all packages, go to [the Poss gitlab](https://gitlab.com/poss4/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
 

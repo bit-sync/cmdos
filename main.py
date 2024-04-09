@@ -2,14 +2,13 @@
 
 import os 
 import platform
-import pcommands as poss
+import software.Poss.pcommands as poss
 
 
 plat = platform.system()
-runposs = "python3 posspmanager.py"
+runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.1.2"
-
+version = "Build 1.3.6"
 
 def about():
     print("about CmdOS")
@@ -42,10 +41,6 @@ def command():
         print(possversion)
     elif command == "update":
         os.system("git pull")
-    elif command == "poss install git-python":
-        poss.install_git_python()
-    elif command == "poss run git-python":
-        poss.run_git_python()
     else:
         print("command not reconized")
     
@@ -54,6 +49,8 @@ def command():
 print("Welcome to CmdOS")
 
 print("A basic OS, for basic things")
+
+print("This is a beta " + version + " some things might not work")
 
 command()
 command()
