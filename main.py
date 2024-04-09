@@ -39,6 +39,10 @@ def command():
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
         poss.run_pyCalculate()
+    elif command == "poss install git-python":
+        poss.install_gitpython()
+    elif command == "poss run git-python":
+        poss.run_gitpython()
     elif command == "poss list":
         poss.list()
     elif command == "exit":

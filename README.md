@@ -62,8 +62,6 @@ prints the version of poss
 
 ### "poss list"
 
-
-
 this prints the current Poss version
 
 ## packages and software
