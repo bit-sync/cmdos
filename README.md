@@ -1,6 +1,6 @@
 # CmdOS
 
-this is a basic, python, embeddable OS.
+This is a basic, python, embeddable OS.
 
 ## Installation
 
