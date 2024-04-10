@@ -8,7 +8,7 @@ import software.Poss.pcommands as poss
 plat = platform.system()
 runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.3.6"
+version = "Build 1.5.0"
 
 def about():
     print("about CmdOS")
@@ -23,6 +23,12 @@ def command():
         print(version)
     elif command == "about":
         about()
+    elif command == "PYpad":
+        os.system("python3 system\sys_software\PYpad\PYpad.py")
+    elif command == "PYmath":
+        os.system("python3 system\sys_software\PYmath\PYmath.py")
+    elif command == "PYpaint":
+        os.system("python3 system\sys_software\PYpaint\PYpaint.py")
     elif command == "poss":
         os.system(runposs)
     elif command == "poss install fusiongamesxcli":
@@ -33,6 +39,10 @@ def command():
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
         poss.run_pyCalculate()
+    elif command == "poss install git-python":
+        poss.install_gitpython()
+    elif command == "poss run git-python":
+        poss.run_gitpython()
     elif command == "poss list":
         poss.list()
     elif command == "exit":
@@ -50,8 +60,39 @@ print("Welcome to CmdOS")
 
 print("A basic OS, for basic things")
 
-print("This is a beta " + version + " some things might not work")
+print("version: " + version)
 
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
 command()
 command()
 command()
