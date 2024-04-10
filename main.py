@@ -8,7 +8,7 @@ import software.Poss.pcommands as poss
 plat = platform.system()
 runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.4.2"
+version = "Build 1.5.0"
 
 def about():
     print("about CmdOS")
@@ -60,8 +60,39 @@ print("Welcome to CmdOS")
 
 print("A basic OS, for basic things")
 
-print("This is a beta " + version + " some things might not work")
+print("version: " + version)
 
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
+command()
 command()
 command()
 command()

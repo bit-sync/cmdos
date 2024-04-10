@@ -66,7 +66,7 @@ this prints the current Poss version
 
 ## packages and software
 
-CmdOS does not come with any software besides the package manager, Poss. 
+CmdOS comes with 4 pieces of software. It comes with PYpaint, PYpad, PYmath, and Poss package manager.
 
-to view all packages, go to [the Poss gitlab](https://gitlab.com/poss4/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
+to view all downloadable packages, go to [the Poss gitlab](https://gitlab.com/poss4/poss-package-manager/-/blob/main/PACKAGEINDEX.md?ref_type=heads&plain=0&blame=1) and read "PACKAGEINDEX.md".
 
