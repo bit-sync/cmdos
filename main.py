@@ -8,7 +8,7 @@ import software.Poss.pcommands as poss
 plat = platform.system()
 runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.3.6"
+version = "Build 1.4.2"
 
 def about():
     print("about CmdOS")
