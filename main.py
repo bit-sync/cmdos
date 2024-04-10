@@ -64,6 +64,9 @@ def boot():
         print(errors)
         print("Currently we do not know what caused these errors but we recommend to re install CmdOS.")
         print("If you have any questions, please contact us at: software@bitsyncdev.com")
+        if errors > 3:
+            print("Fatal errors detected. The program can no longer continue.")
+            print("Stopping with exit code 12")
     else:
         print("errors:")
         print(errors)
