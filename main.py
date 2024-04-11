@@ -3,12 +3,12 @@
 import os 
 import platform
 import software.Poss.pcommands as poss
-
+import system.autorepair as autorp
 
 plat = platform.system()
 runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.5.4"
+version = "Build 1.5.9"
 errors = int("0")
 abcheckid = True
 
@@ -37,20 +37,28 @@ def boot():
     if PYpadcheck == False:
         print("PYpadchech failed")
         errors += 1 # type: ignore
+        autorp.repair("PYpad")
     else:
         print("PYpadchech passed")
     if PYmathcheck == False:
         print("PYmathchech failed")
+        autorp.repair("PYmath")
         errors += 1 # type: ignore
     else:
         print("PYmathchech passed")
     if PYpaintcheck == False:
         print("PYpaintchech failed")
+        autorp.repair("PYpaint")
         errors += 1 # type: ignore
     else:
         print("PYpaintchech passed")
-    if Posscheck1 == False or Posscheck2 == False:
+    if Posscheck1 == False:
         print("Posschech failed")
+        autorp.repair("poss1")
+        errors += 1 # type: ignore
+    if Posscheck2 == False:
+        print("Posschech failed")
+        autorp.repair("poss2")
         errors += 1 # type: ignore
     else:
         print("Posschech passed")

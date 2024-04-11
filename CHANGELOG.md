@@ -1,7 +1,4 @@
-# Changes for 1.5.4
+# Changes for 1.5.9
 
-- Added status checks for main.py
-- Added CHANGES.md
-- Fatal error checking
-- Changed changes to changelog
-- Added ERRORS.md
+- Added snippets for development
+- Auto repair work started
