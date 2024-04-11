@@ -8,7 +8,7 @@ import software.Poss.pcommands as poss
 plat = platform.system()
 runposs = "python3 software/Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.5.0"
+version = "Build 1.5.4"
 errors = int("0")
 abcheckid = True
 
@@ -62,7 +62,7 @@ def boot():
     if errors != 0:
         print("errors:")
         print(errors)
-        print("Currently we do not know what caused these errors but we recommend to re install CmdOS.")
+        print("Seems there was a problem booting CmdOS. (Error code: IGBMCHERRO)")
         print("If you have any questions, please contact us at: software@bitsyncdev.com")
         if errors > 3:
             print("Fatal errors detected. The program can no longer continue.")
