@@ -26,8 +26,8 @@ def boot():
     PYpadcheck = os.path.isfile("system/sys_software/PYpad/PYpad.py")
     PYmathcheck = os.path.isfile("system/sys_software/PYmath/PYmath.py")
     PYpaintcheck = os.path.isfile("system/sys_software/PYpaint/PYpaint.py")
-    Posscheck1 = os.path.isfile("software/Poss/pcommands.py")
-    Posscheck2 = os.path.isfile("software/Poss/posspmanager.py")
+    Posscheck1 = os.path.isfile("Poss/pcommands.py")
+    Posscheck2 = os.path.isfile("Poss/posspmanager.py")
     if version != version:
         print("Vcheck failed")
         errors += 1 # type: ignore
