@@ -6,7 +6,7 @@ import Poss.pcommands as poss
 import system.autorepair as autorp
 
 plat = platform.system()
-runposs = "python3 software/Poss/posspmanager.py"
+runposs = "python3 Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
 version = "Build 1.5.9"
 errors = int("0")
@@ -100,24 +100,33 @@ def command():
     elif command == "PYpaint":
         os.system("python3 system/sys_software/PYpaint/PYpaint.py")
     elif command == "poss":
+        print("Warning: This command is in testing, might not work properly")
         os.system(runposs)
     elif command == "poss install fusiongamesxcli":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_FusionGamesXCLI()
     elif command == "poss run fusiongamesxcli":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_FusionGamesXCLI()
     elif command == "poss install pycalculate":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_pyCalculate()
     elif command == "poss install git-python":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_gitpython()
     elif command == "poss run git-python":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_gitpython()
     elif command == "poss list":
+        print("Warning: This command is in testing, might not work properly")
         poss.list()
     elif command == "exit":
         exit()
     elif command == "poss version":
+        print("Warning: This command is in testing, might not work properly")
         print(possversion)
     elif command == "update":
         os.system("git pull")

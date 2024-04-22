@@ -40,7 +40,7 @@ def command():
         run_pyCalculate()
     elif command == "install git-python":
        install_gitpython()
-       lista.write("git-python, ")
+       lista.write("git-python" + "/N")
     elif command == "run git-python":
         run_gitpython()
     elif command == "about":

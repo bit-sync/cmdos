@@ -1,3 +1,0 @@
-pycalculate
-fusiongamesxcli
-pycalculate, pycalculate, 
