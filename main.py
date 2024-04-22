@@ -2,7 +2,7 @@
 
 import os 
 import platform
-import software.Poss.pcommands as poss
+import Poss.pcommands as poss
 import system.autorepair as autorp
 
 plat = platform.system()
