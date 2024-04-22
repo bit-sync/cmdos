@@ -2,13 +2,13 @@
 
 import os 
 import platform
-import software.Poss.pcommands as poss
-
+import Poss.pcommands as poss
+import system.autorepair as autorp
 
 plat = platform.system()
-runposs = "python3 software/Poss/posspmanager.py"
+runposs = "python3 Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.5.4"
+version = "Build 1.5.9"
 errors = int("0")
 abcheckid = True
 
@@ -26,8 +26,8 @@ def boot():
     PYpadcheck = os.path.isfile("system/sys_software/PYpad/PYpad.py")
     PYmathcheck = os.path.isfile("system/sys_software/PYmath/PYmath.py")
     PYpaintcheck = os.path.isfile("system/sys_software/PYpaint/PYpaint.py")
-    Posscheck1 = os.path.isfile("software/Poss/pcommands.py")
-    Posscheck2 = os.path.isfile("software/Poss/posspmanager.py")
+    Posscheck1 = os.path.isfile("Poss/pcommands.py")
+    Posscheck2 = os.path.isfile("Poss/posspmanager.py")
     if version != version:
         print("Vcheck failed")
         errors += 1 # type: ignore
@@ -37,20 +37,28 @@ def boot():
     if PYpadcheck == False:
         print("PYpadchech failed")
         errors += 1 # type: ignore
+        autorp.repair("PYpad")
     else:
         print("PYpadchech passed")
     if PYmathcheck == False:
         print("PYmathchech failed")
+        autorp.repair("PYmath")
         errors += 1 # type: ignore
     else:
         print("PYmathchech passed")
     if PYpaintcheck == False:
         print("PYpaintchech failed")
+        autorp.repair("PYpaint")
         errors += 1 # type: ignore
     else:
         print("PYpaintchech passed")
-    if Posscheck1 == False or Posscheck2 == False:
+    if Posscheck1 == False:
         print("Posschech failed")
+        autorp.repair("poss1")
+        errors += 1 # type: ignore
+    if Posscheck2 == False:
+        print("Posschech failed")
+        autorp.repair("poss2")
         errors += 1 # type: ignore
     else:
         print("Posschech passed")
@@ -92,24 +100,33 @@ def command():
     elif command == "PYpaint":
         os.system("python3 system/sys_software/PYpaint/PYpaint.py")
     elif command == "poss":
+        print("Warning: This command is in testing, might not work properly")
         os.system(runposs)
     elif command == "poss install fusiongamesxcli":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_FusionGamesXCLI()
     elif command == "poss run fusiongamesxcli":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_FusionGamesXCLI()
     elif command == "poss install pycalculate":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_pyCalculate()
     elif command == "poss run pycalculate":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_pyCalculate()
     elif command == "poss install git-python":
+        print("Warning: This command is in testing, might not work properly")
         poss.install_gitpython()
     elif command == "poss run git-python":
+        print("Warning: This command is in testing, might not work properly")
         poss.run_gitpython()
     elif command == "poss list":
+        print("Warning: This command is in testing, might not work properly")
         poss.list()
     elif command == "exit":
         exit()
     elif command == "poss version":
+        print("Warning: This command is in testing, might not work properly")
         print(possversion)
     elif command == "update":
         os.system("git pull")

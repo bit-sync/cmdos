@@ -6,7 +6,6 @@ listr = open("list.txt", "r")
 def install_FusionGamesXCLI():
     os.system("cd software")
     os.system("git clone -b poss https://gitlab.com/fusiongames1/Fusion-Games-X-CLI.git")
-    lista.write("fusiongamesxcli" + "\n")
 def run_FusionGamesXCLI():
     os.system("cd software")
     os.system("python3 Fusion-Games-X-CLI/FusionGamesXCLI.py")
@@ -16,15 +15,17 @@ def run_FusionGamesXCLI():
 def install_pyCalculate():
     os.system("cd software")
     os.system("git clone -b main https://gitlab.com/zjones.092912/pycalculate.git")
-    lista.write("pycalculate" + "\n")
 def run_pyCalculate():
+    os.system("cd software")
     os.system("python3 pycalculate/main.py")
 # pycal package end
 
 # gitpy package start
 def install_gitpython():
+    os.system("cd software")
     os.system("git clone -b main https://gitlab.com/zjones.092912/git-python.git")
 def run_gitpython():
+    os.system("cd software")
     os.system("python3 git-python/git-python.py")
 # gitpy package end
 
