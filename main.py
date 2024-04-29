@@ -1,4 +1,5 @@
 # start backend
+#! Most poss commands cannot be used, they do not work
 
 import os 
 import platform
@@ -8,7 +9,7 @@ import system.autorepair as autorp
 plat = platform.system()
 runposs = "python3 Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.5.9"
+version = "Build 1.6.0"
 errors = int("0")
 abcheckid = True
 
@@ -20,7 +21,8 @@ def about():
     print("platform: "+ plat)
     print("Made by Extraskilled56")
     print("Copyright Extraskilled56, 2024")
-
+#TODO fix this function so that it correctly places autorepair file in correct folder
+#! auto repair dosent work rn
 def boot():
     global errors
     PYpadcheck = os.path.isfile("system/sys_software/PYpad/PYpad.py")
@@ -82,8 +84,7 @@ def boot():
         print("A basic OS, for basic things")
         print("version: " + version)
         print("If you have any questions, please contact us at: software@bitsyncdev.com")
-    
-    
+
     
 
     
