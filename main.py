@@ -9,7 +9,7 @@ import system.autorepair as autorp
 plat = platform.system()
 runposs = "python3 Poss/posspmanager.py"
 possversion = "1.3.1 CmdOS version"
-version = "Build 1.6.0"
+version = "Build 1.6.1"
 errors = int("0")
 abcheckid = True
 
@@ -77,6 +77,7 @@ def boot():
         if errors > 3:
             print("Fatal errors detected. The program can no longer continue.")
             print("Stopping with exit code 12")
+            exit()
     else:
         print("errors:")
         print(errors)
@@ -138,43 +139,5 @@ def command():
 
 boot()
 
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
-command()
+while True:
+    command()
